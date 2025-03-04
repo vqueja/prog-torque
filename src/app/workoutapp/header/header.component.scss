@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    padding-top: 10px;
+    height: 50px;
+    min-width: 1146px;
+    max-width: 1900px;
+    padding-left: 100px;
+    background: rgb(255, 95, 31);
+    display: inline;
+    z-index: 2;
+}
+
+.fa {
+    color: rgb(251, 206, 177);
+    cursor: pointer;
+}
+
+.icon-span {
+    display: inline-block; 
+    margin: 0.25em; 
+    border: 1px solid rgb(251, 206, 177); 
+    border-radius: 0.25em; 
+    padding: .25em 0.5em;
+}
+
+.right-span {
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+.space {
+    visibility: hidden;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    font-weight: bolder;
+    color: rgb(241, 188, 167);
+}

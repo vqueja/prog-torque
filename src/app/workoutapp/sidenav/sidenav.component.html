@@ -1,0 +1,27 @@
+
+
+<div *ngIf="expanded" class="nav-primary active-expanded">
+    <div class="expand-nav"><a class="anchor expand-sidebar" href="#" (click)="closeNav()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></div>
+    <ul class="sidebar">
+        <li class="selection"><i class="icon-li fa fa-cog" aria-hidden="true"></i>Exercises</li>
+        <li class="selection"><i class="icon-li fa fa-line-chart" aria-hidden="true"></i>Progress</li>
+        <li class="selection"><i class="icon-li fa fa-clock" aria-hidden="true"></i>Schedule</li>
+        <li class="selection"><i class="icon-li fa fa-tasks" aria-hidden="true"></i>Tracker</li>
+        <li class="selection"><i class="icon-li fa fa-compass" aria-hidden="true"></i>Guide</li>
+        <li class="selection"><i class="icon-li fa fa-info-circle" aria-hidden="true"></i>About</li>
+        <li class="selection"><i class="icon-li fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+    </ul>
+</div>
+
+<div *ngIf="!expanded" class="nav-primary active">
+    <div class="expand-nav"><a class="anchor expand-sidebar" href="#" (click)="expandNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+    <ul class="sidebar">
+        <li><i class="icon-li fa fa-cog tooltip" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-line-chart" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-clock" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-tasks" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-compass" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-info-circle" aria-hidden="true"></i></li>
+        <li><i class="icon-li fa fa-sign-out" aria-hidden="true"></i></li>
+    </ul>
+</div>
