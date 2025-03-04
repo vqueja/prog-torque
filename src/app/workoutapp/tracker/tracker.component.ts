@@ -12,11 +12,11 @@ import { Days } from '../common/static/days';
 })
 export class TrackerComponent implements OnInit {
   editUser: Boolean = false;
+  bSeeExercises: Boolean = false;
   days = Days;
   constructor(){}
 
   ngOnInit(): void {
-    console.log(this.getToday());
   }
 
   public getToday(): string {

@@ -26,6 +26,10 @@ export class SidenavComponent implements OnInit, AfterViewInit {
     this.expanded = false;
   }
 
+  public showExercises(): void {
+    
+  }
+
   ngAfterViewInit(): void {
       
   }

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+}
+
+.card-today {
+    width: 250px;
+    height: 300px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 5px 10px;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgb(255, 95, 31);
+    border-radius: 10px;
+    background-color: #badaf8;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    color: rgb(255, 95, 31);
+}

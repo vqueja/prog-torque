@@ -1,5 +1,6 @@
 .container {
     min-width: 1050px;
+    max-width: 1900px;
     min-height: 550px;
     background-color: rgb(255, 245, 238);
     z-index: 1;
@@ -9,10 +10,9 @@
 }
 
 .tracker {
-    padding: 10px 10px 10px 105px;
+    padding: 10px 10px 10px 98px;
     height: 350px;
-    width: 500px;
-
+    width: 92%;
 }
 
 .contents {
