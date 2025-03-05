@@ -39,7 +39,7 @@
     height: 300px;
     padding: 5px 5px 5px 5px;
     margin: 10px 10px 5px 10px;
-    border-width: 2px 2px 2px 2px;
+    border-width: 1px 1px 1px 1px;
     border-color: rgb(255, 95, 31);
     border-radius: 10px;
     background-color: #badaf8;
@@ -52,4 +52,8 @@
     font-size: small;
     font-weight: bolder;
     color: rgb(255, 95, 31);
+}
+
+.section {
+    margin-top: 10px;
 }

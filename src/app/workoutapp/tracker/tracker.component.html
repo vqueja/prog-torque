@@ -1,29 +1,71 @@
 <div class="container">
     <div *ngIf="!editUser" class="tracker">
         <div class="contents">
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">SUN</mat-card-content>
+            <mat-card [ngClass]="setClass('sun')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">SUN</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">MON</mat-card-content>
+            <mat-card [ngClass]="setClass('mon')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">MON</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card ngClass="getToday().toUpperCase() === 'TUE' ? card-today : card" appearance="outlined">
-                <mat-card-content class="card-content">TUE</mat-card-content>
+            <mat-card [ngClass]="setClass('tue')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">TUE</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">WED</mat-card-content>
+            <mat-card [ngClass]="setClass('wed')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">WED</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">THU</mat-card-content>
+            <mat-card [ngClass]="setClass('thu')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">THU</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">FRI</mat-card-content>
+            <mat-card [ngClass]="setClass('fri')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">FRI</div>
+                    <div class="section">
+                        <span>Goal</span>
+                        <div>
+                            Lorem Epsum Vitali
+                            Novus Ordo Vox
+                        </div>
+                    </div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
-            <mat-card class="card" appearance="outlined">
-                <mat-card-content class="card-content">SAT</mat-card-content>
+            <mat-card [ngClass]="setClass('sat')" appearance="outlined">
+                <mat-card-content class="card-content">
+                    <div class="day">SAT</div>
+                    <div class="section"><span>Goal</span></div>
+                    <div class="section"><span>Actual</span></div>
+                    <div class="section"><span>Improve</span></div>
+                </mat-card-content>
             </mat-card>
         </div>
     </div>
+    <div *ngIf="bSeeExercises && !editUser"></div>
     <div>
         <app-footer></app-footer>
     </div>
