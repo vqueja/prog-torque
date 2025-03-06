@@ -9,4 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class ExercisesComponent {
 
+  // readonly $exerciseOptions = selectListSignal
+
 }

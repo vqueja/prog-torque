@@ -15,7 +15,7 @@
     <div *ngIf="!expanded" class="nav-primary active">
         <div class="expand-nav"><a class="anchor expand-sidebar" href="#" (click)="expandNav()"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
         <ul class="sidebar">
-            <li><a class="anchor" (click)="showExercises()"><i class="icon-li fa fa-cog tooltip" aria-hidden="true"></i></a></li>
+            <li><a class="anchor" (click)="showExercises()"><i class="icon-li fa fa-cog tooltip unclicked-menu" aria-hidden="true"></i></a></li>
             <li><i class="icon-li fa fa-line-chart" aria-hidden="true"></i></li>
             <li><i class="icon-li fa fa-clock" aria-hidden="true"></i></li>
             <li><i class="icon-li fa fa-tasks" aria-hidden="true"></i></li>
@@ -24,3 +24,4 @@
             <li><i class="icon-li fa fa-sign-out" aria-hidden="true"></i></li>
         </ul>
     </div>
+    <div [ngClass]="menuClass"><app-navmenu></app-navmenu></div>

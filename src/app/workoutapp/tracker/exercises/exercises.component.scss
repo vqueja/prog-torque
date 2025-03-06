@@ -1,11 +1,13 @@
 .container {
+    border: 2px solid rgb(255, 95, 31);
+    position: fixed;
     display: flex;
 }
 
-.card-today {
-    width: 250px;
-    height: 300px;
-    padding: 5px 5px 5px 5px;
+.card {
+    width: 150px;
+    height: 180px;
+    padding: 1px 1px 1px 1px;
     margin: 10px 10px 5px 10px;
     border-width: 2px 2px 2px 2px;
     border-color: rgb(255, 95, 31);

@@ -4,7 +4,7 @@
 	position: absolute;
     background: rgb(251, 206, 177);
     height: 470px;
-    z-index: 999;
+    z-index: 3;
 
 }
 
@@ -79,4 +79,20 @@
 span {
     right: -10px;
     position: relative;
+}
+
+.selected-menu {
+    display: inline;
+}
+
+.selected-menu-hidden {
+    display: none;
+}
+
+.clicked-menu {
+    background-color: rgb(255, 95, 31);
+}
+
+.unclicked-menu {
+    background-color: rgb(251, 206, 177);
 }
