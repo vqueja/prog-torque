@@ -1,0 +1,26 @@
+<div class="container text">
+    <div class="info">
+        <h4>Let's start creating your workout program!</h4>
+        <mat-form-field class="matField">
+            <mat-label class="text">Select Muscle Area</mat-label>
+            <mat-select class="matSel" [(ngModel)]="$stored1" >
+            @for (muscle of mArea; track muscle) {
+                <mat-option class="text mat-opt" [value]="muscle.id" > {{muscle.area}} </mat-option>
+            }
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="info">
+        <mat-form-field class="matField">
+            <mat-label class="text">Select Day</mat-label>
+            <mat-select class="matSel" disableOptionCentering [(ngModel)]="$stored2">
+            @for (day of days; track day) {
+                <mat-option class="text mat-opt" [value]="day.id" > {{day.name}} </mat-option>
+            }
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="info">
+        <button clas="primary-btn">Start</button>
+    </div>
+</div>
