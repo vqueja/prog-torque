@@ -1,0 +1,76 @@
+{
+  "exercise": [
+    {
+      "id": 0,
+      "name": "chest",
+      "types": {
+        "id": 0,
+        "name": "bench press",
+        "variations": [
+          {
+            "id": 0,
+            "name": "flat",
+            "equipment": {
+              "barbell": "1",
+              "dumbbell": "1",
+              "cables": "0",
+              "machine": "1"
+            }
+          },
+          {
+            "id": 1,
+            "name": "inclined",
+            "equipment": {
+              "barbell": "1",
+              "dumbbell": "1",
+              "cables": "1",
+              "machine": "1"
+            }
+          },
+          {
+            "id": 2,
+            "name": "declined",
+            "equipment": {
+              "barbell": "0",
+              "dumbbell": "0",
+              "cables": "1",
+              "machine": "0"
+            }
+          },
+          {
+            "id": 3,
+            "name": "flyes",
+            "equipment": {
+              "barbell": "1",
+              "dumbbell": "1",
+              "cables": "1",
+              "machine": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "back",
+      "types": {
+        "id": 0,
+        "name": "pullups",
+        "variations": [
+          {
+            "id": 0,
+            "name": "normal grip"
+          },
+          {
+            "id": 1,
+            "name": "wide grip"
+          },
+          {
+            "id": 2,
+            "name": "reverse grip"
+          }
+        ]
+      }
+    }
+  ]
+}

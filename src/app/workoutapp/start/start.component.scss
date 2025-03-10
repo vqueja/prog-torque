@@ -1,0 +1,68 @@
+.container {
+    display: block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 120px;
+    margin-inline: auto;
+    padding-top: 65px;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.info {
+    padding-top: 5px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    color: rgb(255, 74, 2);
+} 
+
+.text-selection {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bolder;
+    color: bisque;
+} 
+
+::ng-deep .mat-select-panel-animations-enabled {
+    background-color: #badaf8 !important;
+}
+
+::ng-deep:hover .mat-select-panel-animations-enabled {
+    background-color: #64b1f8 !important;
+}
+
+::ng-deep .mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+    background-color: #badaf8 !important;
+}
+
+::ng-deep .mat-option {
+    background-color: #3002ff !important;
+}
+
+::ng-deep .mat-mdc-select-value-text {
+    color: rgb(255, 95, 31);
+}
+
+::ng-deep .mat-mdc-select-panel {
+    background-color: bisque;
+}
+
+.main-btn {
+    // border: 1 solid rgb(255, 95, 31);
+    width: 100px !important;
+    // height: 30px;
+    box-sizing: border-box;
+}

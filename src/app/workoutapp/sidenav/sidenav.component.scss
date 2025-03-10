@@ -1,0 +1,98 @@
+
+
+.nav-primary {
+	position: absolute;
+    background: rgb(251, 206, 177);
+    height: 470px;
+    z-index: 3;
+
+}
+
+.menu {
+    position: relative;
+}
+
+.sidebar {
+    list-style-type: none;
+    position: absolute;
+    padding-left: 25px;
+}
+
+.active {
+    width: 90px;
+}
+
+.active-expanded {
+    width: 200px;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.icon-li {
+    display: inline-block; 
+    margin: 0.25em; 
+    border: 1px solid rgb(255, 95, 31); 
+    border-radius: 0.25em; 
+    padding: .25em 0.5em;
+}
+
+.fa {
+    color: rgb(255, 95, 31);
+    cursor: pointer;
+}
+
+.left {
+    position: absolute;
+    right: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.anchor {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.expand-nav {
+    padding-top: 15px;
+    padding-left: 15px
+}
+
+.expand-sidebar {
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 205%;
+    font-weight: bolder;
+    color: rgb(255, 95, 31);
+}
+
+.selection {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgb(255, 95, 31);
+}
+
+span {
+    right: -10px;
+    position: relative;
+}
+
+.selected-menu {
+    display: inline;
+}
+
+.selected-menu-hidden {
+    display: none;
+}
+
+.clicked-menu {
+    background-color: rgb(255, 95, 31);
+}
+
+.unclicked-menu {
+    background-color: rgb(251, 206, 177);
+}
