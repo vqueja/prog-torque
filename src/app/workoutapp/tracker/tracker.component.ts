@@ -1,4 +1,6 @@
-import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit, signal} from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { fromEvent } from 'rxjs';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
@@ -10,11 +12,12 @@ import { Days } from '../common/static/days';
   templateUrl: './tracker.component.html',
   styleUrl: './tracker.component.scss'
 })
+
 export class TrackerComponent implements OnInit, AfterViewInit {
   editUser: Boolean = false;
-  bSeeExercises: Boolean = false;
   days = Days;
   class = ['card', 'card-today'];
+
   constructor(private ref: ChangeDetectorRef){}
 
   ngOnInit(): void {
@@ -31,7 +34,7 @@ export class TrackerComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-      
+  
   }
 
   

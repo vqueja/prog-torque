@@ -3,7 +3,7 @@
         <h4>Let's start creating your workout program!</h4>
         <mat-form-field class="matField">
             <mat-label class="text">Select Muscle Area</mat-label>
-            <mat-select class="matSel" [(ngModel)]="$stored1" >
+            <mat-select class="matSel" [(ngModel)]="$stored1" (selectionChange)="optionChange('a', $event)">
             @for (muscle of mArea; track muscle) {
                 <mat-option class="text mat-opt" [value]="muscle.id" > {{muscle.area}} </mat-option>
             }
@@ -13,7 +13,7 @@
     <div class="info">
         <mat-form-field class="matField">
             <mat-label class="text">Select Day</mat-label>
-            <mat-select class="matSel" disableOptionCentering [(ngModel)]="$stored2">
+            <mat-select class="matSel" disableOptionCentering [(ngModel)]="$stored2" (selectionChange)="optionChange('b', $event)">
             @for (day of days; track day) {
                 <mat-option class="text mat-opt" [value]="day.id" > {{day.name}} </mat-option>
             }
@@ -21,6 +21,6 @@
         </mat-form-field>
     </div>
     <div class="info">
-        <button clas="primary-btn">Start</button>
+        <button clas="main-btn" [disabled]="disabled" (click)="showExercises()"><span class="text">Start</span></button>
     </div>
 </div>
